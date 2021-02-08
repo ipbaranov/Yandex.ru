@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class MainPage {
     /**
-     * определение метода главной страницы
+     * определение метода открытия стартовой страницы/define open base url
      */
     public MainPage open(){
         Selenide.open("/");
@@ -33,7 +33,7 @@ public class MainPage {
 
     public SelenideElement SearchBtn = $(By.className("search2__button"));
     /**
-     * определение локатора результата поиска
+     * определение локатора результата поиска// define locator result search
      *
      */
 
@@ -41,12 +41,15 @@ public class MainPage {
 
     /**
      * определение локатора кнопки входа на сервис "Объявления" с главной страницы
+     * deefine locator button service ADS main page
+     *
      */
 
     public SelenideElement LinkAds =  $(By.linkText("Объявления"));
 
     /**
      * определение локатора кнопки выхода из аккаунта
+     * define  out button from account
      */
 
     public static SelenideElement logoutBtn = $(By.linkText("Выйти"));
@@ -54,6 +57,7 @@ public class MainPage {
 
     /**
      * определение локатора кнопки входа в аккаунт
+     * define button input account
      */
 
     public static SelenideElement loginBtn = $x("//button[@type='submit']");
@@ -61,20 +65,23 @@ public class MainPage {
 
     /**
      * определение локатора поля ввода логина
+     * define input field login
      */
 
     public   SelenideElement loginField = $(By.id("passp-field-login"));
 
 
     /**
-     * определение локатора поля ввода пароля
+     * определение локатора поля ввода пароля..
+     * define locator input field password
      */
 
     public static SelenideElement passwdField = $(By.id("passp-field-passwd"));
 
 
     /**
-     * определение локатора поля меню пользователя
+     * определение локатора поля меню пользователя ..
+     * define locator menu user
      */
 
 
@@ -82,13 +89,14 @@ public class MainPage {
 
      /**
      * метод для ввода логина
+      * method enter user login
      */
     public   void inputLogin(String login) {
         loginField.sendKeys(login);
     }
 
     /**
-     * метод для ввода пароля
+     * метод для ввода пароля ..method enter user password
      */
     public static void inputPasswd(String passwd) {
         passwdField.sendKeys(passwd);
