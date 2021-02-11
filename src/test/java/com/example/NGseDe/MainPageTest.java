@@ -40,7 +40,7 @@ public class MainPageTest {
              * click button
              * wait visibl locator "usermenu"
              *  method get user menu username
-             *  chek name = username
+     \        *  cheсk name = username
              */
         open("/");
 
@@ -58,7 +58,7 @@ public class MainPageTest {
     @Test(priority = 2, enabled = true)
     public void SearchMain() {
         /**
-         * open page search
+         * open  search page
          * define locate input text and hover the cursor mause
          * clear search field
          * enter  text "apple"

@@ -98,7 +98,7 @@ public class MainPage {
     /**
      * метод для ввода пароля ..method enter user password
      */
-    public static void inputPasswd(String passwd) {
+    public   void inputPasswd(String passwd) {
         passwdField.sendKeys(passwd);
     }
 
