@@ -14,7 +14,7 @@ import static org.testng.Assert.*;
 
 
 public class MainPageTest {
-    //protected static MainPage mainPage;
+   
     MainPage mainPage = new MainPage();
     @BeforeClass
 
